@@ -24,6 +24,10 @@ gem 'httparty'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # Use pry-nav for navigation
+  gem 'pry-nav'
+  # Use pry-rails for console debugging
+  gem 'pry-rails'
 end
 
 group :development do
