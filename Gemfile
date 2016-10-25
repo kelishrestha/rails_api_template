@@ -28,6 +28,10 @@ group :development, :test do
   gem 'pry-nav'
   # Use pry-rails for console debugging
   gem 'pry-rails'
+  # Code quality analyzer
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec'
+  gem 'rubycritic', require: false
 end
 
 group :development do
