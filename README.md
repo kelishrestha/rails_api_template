@@ -44,13 +44,13 @@ This application is used for building rails API apps.
 
 * Rubocop
 
-    bundle exec rubocop
+        bundle exec rubocop
 
 * Rubycritic
 
-    bundle exec rubycritic
-      or
-    bundle exec reek [Runs in console]
+        bundle exec rubycritic
+          or
+        bundle exec reek [Runs in console]
 
 ### Interactive Session via Terminal
 
