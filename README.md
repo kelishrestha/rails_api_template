@@ -56,6 +56,16 @@ This application is used for building rails API apps.
 
     bundle exec rails c
 
-### Services (job queues, cache servers, search engines, etc.)
+### Services
+    - Job Queues
+    - Cache Servers
+    - Search Engines
+    - Error Service(Authorization Error etc)
+    - Others
 
 ### Deployment instructions
+    For testing on production purpose only. Go for [Digital Ocean](http://www.digitalocean.com) or [Amazon Web Services](https://aws.amazon.com)
+
+    herkou login
+    heroku create
+    git push heroku master
