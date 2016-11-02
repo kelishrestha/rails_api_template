@@ -1,10 +1,4 @@
 # frozen_string_literal: true
-require 'rubygems'
-require File.expand_path('../../config/environment', __FILE__)
-
-Bundler.require
-require 'rspec/rails'
-require 'rack/test'
 require 'shoulda/matchers'
 require 'rubycritic/cli/application'
 
