@@ -8,7 +8,7 @@ class CatchJsonParseErrors
   def call(env)
     unless env['CONTENT_LENGTH'].to_i.zero?
       content_type = env['CONTENT_TYPE']
-      if content_type && content_type.include?('application/json')
+      if content_type&.include?('application/json')
         begin
           JSON.parse(read_input(env))
         rescue JSON::ParserError

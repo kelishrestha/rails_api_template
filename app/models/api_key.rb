@@ -9,7 +9,6 @@
 
 # Api Key model
 class ApiKey < ApplicationRecord
-  
   before_create -> { assign_unique_id(field: :token) }
 
   def self.valid_token?(token)

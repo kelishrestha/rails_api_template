@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+# API error wrapper
 class APIError < StandardError
   attr_accessor :code
 
