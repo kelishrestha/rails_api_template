@@ -29,10 +29,6 @@ group :development, :test do
   gem 'pry-nav'
   # Use pry-rails for console debugging
   gem 'pry-rails'
-  # Code quality analyzer
-  gem 'rubocop', require: false
-  gem 'rubocop-rspec'
-  gem 'rubycritic', require: false
 end
 
 group :development do
@@ -40,6 +36,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Code quality analyzer
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec'
+  gem 'rubycritic', require: false
 end
 
 group :test do
