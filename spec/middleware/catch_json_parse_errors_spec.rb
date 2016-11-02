@@ -13,11 +13,8 @@ describe CatchJsonParseErrors do
   context 'when invalid JSON request body' do
     let(:post_data) do
       '{
-        "name": "Project Calendar for Receipt Digitization",
-        "description": "Used to keep track of all shifts and worker assignments in the project",
-        "owner": {
-          "type": "project
-        }
+        "name": "Project",
+        "description": "Used to keep track of all elements in the project
       }'
     end
 
@@ -33,11 +30,8 @@ describe CatchJsonParseErrors do
   context 'when valid JSON request body' do
     let(:post_data) do
       '{
-        "name": "Project Calendar for Receipt Digitization",
-        "description": "Used to keep track of all shifts and worker assignments in the project",
-        "owner": {
-          "type": "project"
-        }
+        "name": "Project",
+        "description": "Used to keep track of all elements in the project"
       }'
     end
 
