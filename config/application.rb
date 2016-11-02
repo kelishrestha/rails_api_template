@@ -25,6 +25,7 @@ module RailsApiTemplate
     Dir["#{Rails.root}/lib/**/*.rb"].each { |f| require(f) }
     Dir["#{Rails.root}/app/middleware/*.rb"].each { |f| require(f) }
     require "#{Rails.root}/config/initializers/config"
+    Dir["#{Rails.root}/app/error_objects/*.rb"].each { |f| require(f) }
 
     # Only loads a smaller set of middleware suitable for API only apps.
     # Middleware like session, flash, cookies can be added back manually.
