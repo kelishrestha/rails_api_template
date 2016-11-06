@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # API error wrapper
 class APIError < StandardError
-  attr_accessor :code
+  attr_accessor :code, :message
 
   def initialize(code, msg = nil, _request = nil, _exception = nil)
     @code = code
@@ -10,13 +10,13 @@ class APIError < StandardError
                else
                  ERRORS[code]
                end
-    super(msg)
+    super(message)
   end
 
   def render_json
     {
-      json: @message,
-      status: @code
+      json: message,
+      status: code
     }
   end
 
