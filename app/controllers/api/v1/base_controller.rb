@@ -13,7 +13,6 @@ module Api
 
       # bottom-up order for exception is needed
       rescue_from Exception, with: :handle_exception
-      # APIError wrapper
       rescue_from APIError, with: :handle_api_error
 
       protected
