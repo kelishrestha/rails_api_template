@@ -1,8 +1,9 @@
 #!/bin/bash
 # To Copy and rename the yml files in the config directory:-
-#   * Type './configure' from ~/cloudfactory directory in terminal.
+#   * Type './configure' from ~/current_dir directory in terminal.
 #   * (or) Double click 'me' in Finder.
 
 mkdir -p .git/hooks
 cp pre-push .git/hooks/pre-push
 chmod +x .git/hooks/pre-push
+cp config/app_config.example.yml config/app_config.yml

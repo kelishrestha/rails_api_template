@@ -1,0 +1,16 @@
+defaults: &defaults
+  users:
+    url: <%= ENV['APP_URL'] %>
+    token: <%= ENV['APP_TOKEN'] %>
+
+development:
+  <<: *defaults
+  users:
+    url: http://127.0.0.1:3000
+    token: app_token
+
+test:
+  <<: *defaults
+  users:
+    url: http://127.0.0.1:3000
+    token: app_token

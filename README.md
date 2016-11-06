@@ -11,14 +11,17 @@ This application is used for building rails API apps.
 
 ## Setup
 ### System dependencies
+---------------------------------------------------
 
     bundle install
 
 ### Configuration
+---------------------------------------------------
 
     ./configure
 
 ### Database
+---------------------------------------------------
 
     bundle exec rails db:create
 
@@ -26,12 +29,13 @@ This application is used for building rails API apps.
 
     bundle exec rails db:test:prepare
 
-
 ### Run application
+---------------------------------------------------
 
     bundle exec rails s -p 3000
 
 ### How to run the test suite
+---------------------------------------------------
 
     bundle exec rspec
       or
@@ -41,6 +45,7 @@ This application is used for building rails API apps.
     (make changes Guardfile that suits your need)
 
 ### How to run code analyzers
+---------------------------------------------------
 
 * Rubocop
 
@@ -53,9 +58,16 @@ This application is used for building rails API apps.
         bundle exec reek [Runs in console]
 
 ### Interactive Session via Terminal
+---------------------------------------------------
 
     bundle exec rails c
 
 ### Services (job queues, cache servers, search engines, etc.)
+---------------------------------------------------
+
+  ......
 
 ### Deployment instructions
+---------------------------------------------------
+
+  ......
